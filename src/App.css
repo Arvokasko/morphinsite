@@ -1,0 +1,41 @@
+* {
+  font-family: Nova Round;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+/* Hide scrollbars for all browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pageContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: morph 1s linear;
+}
+
+@keyframes morph {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

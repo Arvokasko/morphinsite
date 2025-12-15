@@ -1,0 +1,23 @@
+.middleContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer {
+    margin-right: 10%;
+    box-sizing: border-box;
+    max-width: 30%;
+}
+
+.middleHeader {
+    font-size: 70px;
+    text-align: center;
+}
+
+.middleDesc {
+    text-align: center;
+    font-size: 15px;
+}
