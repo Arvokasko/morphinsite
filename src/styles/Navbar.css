@@ -1,0 +1,18 @@
+.mainNavContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: transparent;
+    gap: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+}

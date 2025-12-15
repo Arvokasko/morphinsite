@@ -4,10 +4,11 @@ interface BottombarProps {
     currentPage: number
     totalPages: number
     onPageChange: (page: number) => void
+    segmentNames?: string[]
 }
 
-export default function Bottombar({ currentPage, totalPages, onPageChange }: BottombarProps) {
-    const segments = Array.from({ length: totalPages }, (_, i) => `Segment ${i + 1}`)
+export default function Bottombar({ currentPage, totalPages, onPageChange, segmentNames }: BottombarProps) {
+    const segments = segmentNames || Array.from({ length: totalPages }, (_, i) => `Segment ${i + 1}`)
 
     return (
         <div className="mainContainer">
@@ -21,6 +22,9 @@ export default function Bottombar({ currentPage, totalPages, onPageChange }: Bot
                         {segment}
                     </button>
                 ))}
+            </div>
+            <div className="footerTextContainer" >
+                <p className="footerText" >All right reseved ©</p>
             </div>
         </div>
     )
